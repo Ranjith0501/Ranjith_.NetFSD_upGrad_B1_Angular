@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Learning Course Registration</title>
+</head>
+<body>
+
+<header>
+    <h1>SkillPro Certification Program</h1>
+    <hr>
+</header>
+
+<main>
+    <section>
+        <h2>Course Introduction</h2>
+
+        <video width="400" controls>
+            <source src="v4.mp4" type="video/mp4">
+        </video>
+    </section>
+    <hr>
+    <section>
+        <h3>Enrollment Progress</h3>
+        <progress value="60" max="100"></progress>
+    </section>
+    <hr>
+    <section>
+    <h2>Register for Course</h2>
+    <form>
+     <label>Select Course:</label><br>
+      <input list="courseList" required placeholder="Type course name">
+        <datalist id="courseList">
+            <option value="Full Stack Development">
+            <option value="Data Science">
+            <option value="Cyber Security">
+            <option value="Cloud Computing">
+        </datalist>
+            <br><br>
+            <label>Select Batch Month:</label><br>
+            <input type="month" required>
+            <br><br>
+
+            <label>Preferred Session Time:</label><br>
+            <input type="time" required>
+            <br><br>
+
+            <label>Rate Your Skill Level:</label><br>
+            Beginner
+            <input type="range" min="1" max="10" required>
+            Advanced
+            <br><br>
+            <input type="submit" value="Enroll Now">
+
+        </form>
+    </section>
+</main>
+<footer>
+    <hr>
+    <p>SkillPro Learning Platform | Contact: support@skillpro.com</p>
+</footer>
+</body>
+</html>
