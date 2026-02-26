@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Cleaning & Analytics</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { margin: 5px; padding: 6px 12px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>📊 Data Cleaning & Analytics (Interview Level)</h1>
+
+<button onclick="removeDuplicates()">1. Remove Duplicates</button>
+<button onclick="secondLargest()">2. Second Largest</button>
+<button onclick="frequency()">3. Frequency Count</button>
+<button onclick="firstNonRepeat()">4. First Non-Repeating</button>
+<button onclick="rotateArray()">5. Rotate by 2</button>
+<button onclick="flattenArray()">6. Flatten Nested Array</button>
+<button onclick="findMissing()">7. Find Missing Number</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+let numbers = [10, 20, 30, 10, 40, 20, 50, 60, 60];
+function removeDuplicates() {
+    let unique = [...new Set(numbers)];
+    document.getElementById("output").textContent = unique;
+}
+function secondLargest() {
+
+    let unique = [...new Set(numbers)];
+    unique.sort((a, b) => b - a);
+
+    let second = unique[1];
+
+    document.getElementById("output").textContent =
+        "Second Largest: " + second;
+}
+function frequency() {
+
+    let freq = numbers.reduce((acc, num) => {
+        acc[num] = (acc[num] || 0) + 1;
+        return acc;
+    }, {});
+
+    document.getElementById("output").textContent =
+        JSON.stringify(freq, null, 2);
+}
+function firstNonRepeat() {
+
+    let freq = numbers.reduce((acc, num) => {
+        acc[num] = (acc[num] || 0) + 1;
+        return acc;
+    }, {});
+
+    let result = numbers.find(num => freq[num] === 1);
+
+    document.getElementById("output").textContent =
+        "First Non-Repeating: " + result;
+}
+function rotateArray() {
+
+    let k = 2;
+    let rotated = [
+        ...numbers.slice(k),
+        ...numbers.slice(0, k)
+    ];
+
+    document.getElementById("output").textContent = rotated;
+}
+function flattenArray() {
+
+    let nested = [1,2,[3,4,[5]]];
+
+    function flatten(arr) {
+        return arr.reduce((acc, val) =>
+            acc.concat(Array.isArray(val) ? flatten(val) : val), []
+        );
+    }
+
+    let result = flatten(nested);
+
+    document.getElementById("output").textContent = result;
+}
+function findMissing() {
+
+    let arr = [1,2,3,5,6];
+
+    let n = arr.length + 1;
+    let expectedSum = (n * (n + 1)) / 2;
+    let actualSum = arr.reduce((sum, num) => sum + num, 0);
+
+    let missing = expectedSum - actualSum;
+
+    document.getElementById("output").textContent =
+        "Missing Number: " + missing;
+}
+
+</script>
+
+</body>
+</html>

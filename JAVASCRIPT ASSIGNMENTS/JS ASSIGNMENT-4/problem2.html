@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Analyzer</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 6px 12px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎓 Student Performance Analyzer</h1>
+
+    <button onclick="passedStudents()">1. Passed Students</button>
+    <button onclick="distinctionStudents()">2. Distinction Students</button>
+    <button onclick="classAverage()">3. Class Average</button>
+    <button onclick="findTopper()">4. Find Topper</button>
+    <button onclick="countFailed()">5. Count Failed</button>
+    <button onclick="convertGrades()">6. Convert to Grades</button>
+
+    <button onclick="addRank()">Bonus: Add Rank</button>
+    <button onclick="removeLowest()">Bonus: Remove Lowest</button>
+    <button onclick="leaderboard()">Bonus: Leaderboard</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+
+<script>
+
+let students = [
+  { name: "Akhil", marks: 85 },
+  { name: "Priya", marks: 72 },
+  { name: "Ravi", marks: 90 },
+  { name: "Meena", marks: 45 },
+  { name: "Karan", marks: 30 }
+];
+function passedStudents() {
+    let result = students.filter(s => s.marks >= 40);
+    document.getElementById("output").textContent =
+        JSON.stringify(result, null, 2);
+}
+function distinctionStudents() {
+    let result = students.filter(s => s.marks >= 85);
+    document.getElementById("output").textContent =
+        JSON.stringify(result, null, 2);
+}
+function classAverage() {
+    let total = students.reduce((sum, s) => sum + s.marks, 0);
+    let average = (total / students.length).toFixed(2);
+
+    document.getElementById("output").textContent =
+        "Class Average: " + average;
+}
+function findTopper() {
+    let topper = students.reduce((max, s) =>
+        s.marks > max.marks ? s : max
+    );
+
+    document.getElementById("output").textContent =
+        JSON.stringify(topper, null, 2);
+}
+function countFailed() {
+    let failed = students.filter(s => s.marks < 40).length;
+
+    document.getElementById("output").textContent =
+        "Number of Failed Students: " + failed;
+}
+function convertGrades() {
+    let graded = students.map(s => {
+        let grade;
+
+        if (s.marks >= 85) grade = "A";
+        else if (s.marks >= 60) grade = "B";
+        else if (s.marks >= 40) grade = "C";
+        else grade = "Fail";
+
+        return { ...s, grade: grade };
+    });
+
+    document.getElementById("output").textContent =
+        JSON.stringify(graded, null, 2);
+}
+function addRank() {
+    let ranked = [...students]
+        .sort((a, b) => b.marks - a.marks)
+        .map((s, index) => ({
+            ...s,
+            rank: index + 1
+        }));
+
+    document.getElementById("output").textContent =
+        JSON.stringify(ranked, null, 2);
+}
+function removeLowest() {
+    let sorted = [...students].sort((a, b) => a.marks - b.marks);
+    sorted.shift(); 
+
+    document.getElementById("output").textContent =
+        JSON.stringify(sorted, null, 2);
+}
+function leaderboard() {
+    let board = [...students].sort((a, b) => b.marks - a.marks);
+
+    document.getElementById("output").textContent =
+        JSON.stringify(board, null, 2);
+}
+
+</script>
+
+</body>
+</html>

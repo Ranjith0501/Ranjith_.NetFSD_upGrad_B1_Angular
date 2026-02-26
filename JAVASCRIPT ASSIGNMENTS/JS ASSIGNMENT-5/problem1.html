@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>class &objects</title>
+</head>
+<body>
+
+    <h1>person</h1>
+    <button onclick="runExample()">Run Example</button>
+
+    <pre id="output"></pre>
+
+<script>
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+}
+function runExample() {
+    let p1 = new Person("Rahul", 25);
+    let message = p1.greet();
+    document.getElementById("output").textContent = message;
+    console.log(message);
+}
+</script>
+</body>
+</html>

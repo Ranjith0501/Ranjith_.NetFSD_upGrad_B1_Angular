@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment System</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Payment System</h1>
+
+<button onclick="runExample()">Process Payments</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Payment {
+    pay(amount) {
+        return `Processing payment of ₹${amount}`;
+    }
+}
+
+class CreditCardPayment extends Payment {
+    pay(amount) {
+        return `Paid ₹${amount} using Credit Card. Transaction successful.`;
+    }
+}
+
+class UPIPayment extends Payment {
+    pay(amount) {
+        return `Paid ₹${amount} using UPI. UPI ID verified.`;
+    }
+}
+
+class CashPayment extends Payment {
+    pay(amount) {
+        return `Paid ₹${amount} in Cash. Please collect receipt.`;
+    }
+}
+
+function runExample() {
+
+    let payments = [
+        new CreditCardPayment(),
+        new UPIPayment(),
+        new CashPayment()
+    ];
+
+    let result = "";
+
+    payments.forEach(payment => {
+        result += payment.pay(5000) + "\n";
+    });
+
+    document.getElementById("output").textContent = result;
+}
+
+</script>
+
+</body>
+</html>

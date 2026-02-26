@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Methods - MathUtils</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🧮 Static Methods - MathUtils</h1>
+
+<button onclick="runExample()">Run Example</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class MathUtils {
+
+    static add(a, b) {
+        return a + b;
+    }
+
+    static subtract(a, b) {
+        return a - b;
+    }
+
+    static multiply(a, b) {
+        return a * b;
+    }
+
+}
+
+function runExample() {
+
+    let result = "";
+
+    result += `Add: ${MathUtils.add(10, 20)}\n`;
+    result += `Subtract: ${MathUtils.subtract(30, 10)}\n`;
+    result += `Multiply: ${MathUtils.multiply(5, 6)}\n`;
+
+    document.getElementById("output").textContent = result;
+
+}
+
+</script>
+
+</body>
+</html>

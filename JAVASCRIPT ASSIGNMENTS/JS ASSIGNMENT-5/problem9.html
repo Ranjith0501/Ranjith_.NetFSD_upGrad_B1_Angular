@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ES6 Features Inside Class - Product</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🛍 ES6 Features Inside Class - Product</h1>
+
+<button onclick="runExample()">Run Example</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Product {
+
+    constructor({ name, price, category = "General" }) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+
+    getDetails = () => {
+        return `Product: ${this.name}
+Price: ₹${this.price}
+Category: ${this.category}`;
+    };
+
+    applyDiscount = (discount = 0) => {
+        const finalPrice = this.price - discount;
+        return `Final Price after ₹${discount} discount: ₹${finalPrice}`;
+    };
+
+}
+
+function runExample() {
+
+    const product1 = new Product({
+        name: "Laptop",
+        price: 60000,
+        category: "Electronics"
+    });
+
+    const product2 = new Product({
+        name: "Notebook",
+        price: 50
+    });
+
+    const updatedProduct = { ...product1, price: 55000 };
+
+    let result = "";
+
+    result += product1.getDetails() + "\n\n";
+    result += product1.applyDiscount(5000) + "\n\n";
+    result += product2.getDetails() + "\n\n";
+    result += "Updated Product using Spread Operator:\n";
+    result += `Name: ${updatedProduct.name}
+Price: ₹${updatedProduct.price}
+Category: ${updatedProduct.category}`;
+
+    document.getElementById("output").textContent = result;
+}
+
+</script>
+
+</body>
+</html>

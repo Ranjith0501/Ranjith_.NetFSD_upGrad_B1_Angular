@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Sounds</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Animal Sounds</h1>
+
+<button onclick="runExample()">Make Sounds</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Animal {
+    makeSound() {
+        return "Some generic animal sound";
+    }
+}
+
+class Dog extends Animal {
+    makeSound() {
+        return "Dog says: Woof Woof!";
+    }
+}
+
+class Cat extends Animal {
+    makeSound() {
+        return "Cat says: Meow!";
+    }
+}
+
+class Cow extends Animal {
+    makeSound() {
+        return "Cow says: Moo!";
+    }
+}
+
+function runExample() {
+
+    let animals = [
+        new Dog(),
+        new Cat(),
+        new Cow()
+    ];
+
+    let result = "";
+
+    animals.forEach(animal => {
+        result += animal.makeSound() + "\n";
+    });
+
+    document.getElementById("output").textContent = result;
+}
+
+</script>
+
+</body>
+</html>

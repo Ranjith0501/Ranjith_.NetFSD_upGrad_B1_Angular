@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Form Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+<label>Name:</label><br>
+<input type="text" id="name" onchange="validateName()">
+<p id="nameMsg"></p>
+
+<label>Email:</label><br>
+<input type="text" id="email" onchange="validateEmail()">
+<p id="emailMsg"></p>
+
+<label>Age:</label><br>
+<input type="number" id="age" onchange="validateAge()">
+<p id="ageMsg"></p>
+
+<br>
+<button onclick="submitForm()">Register</button>
+
+<p id="finalMsg"></p>
+
+<script>
+
+function validateName() {
+    let name = document.getElementById("name").value;
+
+    if (name.trim() === "") {
+        document.getElementById("nameMsg").innerHTML =
+            "Name cannot be empty";
+        return false;
+    } else {
+        document.getElementById("nameMsg").innerHTML = "Valid Name";
+        return true;
+    }
+}
+
+function validateEmail() {
+    let email = document.getElementById("email").value;
+
+    if (!email.includes("@")) {
+        document.getElementById("emailMsg").innerHTML =
+            "Email must contain @";
+        return false;
+    } else {
+        document.getElementById("emailMsg").innerHTML = "Valid Email";
+        return true;
+    }
+}
+
+function validateAge() {
+    let age = Number(document.getElementById("age").value);
+
+    if (age <= 18) {
+        document.getElementById("ageMsg").innerHTML =
+            "Age must be greater than 18";
+        return false;
+    } else {
+        document.getElementById("ageMsg").innerHTML = "Valid Age";
+        return true;
+    }
+}
+
+function submitForm() {
+
+    let isNameValid = validateName();
+    let isEmailValid = validateEmail();
+    let isAgeValid = validateAge();
+
+    if (isNameValid && isEmailValid && isAgeValid) {
+
+        let user = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            age: document.getElementById("age").value
+        };
+
+        sessionStorage.setItem("userData", JSON.stringify(user));
+
+        document.getElementById("finalMsg").innerHTML =
+            "Registration Successful (Stored in sessionStorage)";
+    } else {
+        document.getElementById("finalMsg").innerHTML =
+            "Please correct the errors above.";
+    }
+}
+</script>
+</body>
+</html>

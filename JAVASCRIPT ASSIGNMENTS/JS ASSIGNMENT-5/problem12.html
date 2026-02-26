@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Wallet</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input { padding: 5px; margin: 5px 0; }
+        button { padding: 6px 12px; margin: 5px 5px 5px 0; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Wallet</h1>
+
+<input type="number" id="amountInput" placeholder="Enter Amount">
+<br>
+<button onclick="addMoney()">Add Money</button>
+<button onclick="spendMoney()">Spend Money</button>
+<button onclick="showBalance()">Get Balance</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Wallet {
+
+    #balance = 0;
+
+    addMoney(amount) {
+        if (amount <= 0 || isNaN(amount)) {
+            return "Enter valid amount.";
+        }
+        this.#balance += amount;
+        return `₹${amount} added successfully.`;
+    }
+
+    spendMoney(amount) {
+        if (amount <= 0 || isNaN(amount)) {
+            return "Enter valid amount.";
+        }
+        if (amount > this.#balance) {
+            return "Insufficient balance.";
+        }
+        this.#balance -= amount;
+        return `₹${amount} spent successfully.`;
+    }
+
+    getBalance() {
+        return `Current Balance: ₹${this.#balance}`;
+    }
+}
+
+let wallet = new Wallet();
+
+function addMoney() {
+    let amount = parseFloat(document.getElementById("amountInput").value);
+    document.getElementById("output").textContent =
+        wallet.addMoney(amount);
+}
+
+function spendMoney() {
+    let amount = parseFloat(document.getElementById("amountInput").value);
+    document.getElementById("output").textContent =
+        wallet.spendMoney(amount);
+}
+
+function showBalance() {
+    document.getElementById("output").textContent =
+        wallet.getBalance();
+}
+
+</script>
+
+</body>
+</html>

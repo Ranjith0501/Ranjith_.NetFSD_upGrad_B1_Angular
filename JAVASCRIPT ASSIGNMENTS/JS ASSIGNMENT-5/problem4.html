@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Inheritance</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🚗 Vehicle Inheritance</h1>
+
+<button onclick="runExample()">Run Example</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Vehicle {
+    constructor(brand, speed) {
+        this.brand = brand;
+        this.speed = speed;
+    }
+
+    start() {
+        return `${this.brand} vehicle started at ${this.speed} km/h.`;
+    }
+}
+
+class Car extends Vehicle {
+    constructor(brand, speed, fuelType) {
+        super(brand, speed);
+        this.fuelType = fuelType;
+    }
+
+    showDetails() {
+        return `Brand: ${this.brand}
+Speed: ${this.speed} km/h
+Fuel Type: ${this.fuelType}`;
+    }
+}
+
+function runExample() {
+
+    let car1 = new Car("Toyota", 120, "Petrol");
+
+    let parentMethodOutput = car1.start();
+    let childMethodOutput = car1.showDetails();
+
+    document.getElementById("output").textContent =
+        parentMethodOutput + "\n\n" + childMethodOutput;
+
+}
+
+</script>
+
+</body>
+</html>

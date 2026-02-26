@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Online Book Store</h1>
+
+    <button onclick="displayTitles()">1. Display Titles</button>
+    <button onclick="totalInventory()">2. Total Inventory Value</button>
+    <button onclick="costlyBooks()">3. Books Above ₹500</button>
+    <button onclick="increasePrice()">4. Increase Price 5%</button>
+    <button onclick="sortBooks()">5. Sort by Price</button>
+    <button onclick="removeBook()">6. Remove Book ID=2</button>
+    <button onclick="checkStock()">7. Check Out of Stock</button>
+    <button onclick="groupBooks()">Bonus: Group by Price</button>
+    <button onclick="addDiscount()">Bonus: Add Discount</button>
+    <button onclick="generateInvoice()">Bonus: Generate Invoice</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+
+    <script>
+
+        let books = [
+            { id: 1, title: "JavaScript Basics", price: 450, stock: 10 },
+            { id: 2, title: "React Guide", price: 650, stock: 5 },
+            { id: 3, title: "Node.js Mastery", price: 550, stock: 8 },
+            { id: 4, title: "CSS Complete", price: 300, stock: 12 }
+        ];
+        function displayTitles() {
+            let titles = books.map(book => book.title);
+            document.getElementById("output").textContent = titles.join("\n");
+        }
+        function totalInventory() {
+            let total = books.reduce((sum, book) => {
+                return sum + (book.price * book.stock);
+            }, 0);
+
+            document.getElementById("output").textContent =
+                "Total Inventory Value: ₹" + total;
+        }
+        function costlyBooks() {
+            let result = books.filter(book => book.price > 500);
+            document.getElementById("output").textContent =
+                JSON.stringify(result, null, 2);
+        }
+        function increasePrice() {
+            books = books.map(book => ({
+                ...book,
+                price: Math.round(book.price * 1.05)
+            }));
+
+            document.getElementById("output").textContent =
+                "Prices Increased by 5%\n" +
+                JSON.stringify(books, null, 2);
+        }
+        function sortBooks() {
+            let sorted = [...books].sort((a, b) => a.price - b.price);
+
+            document.getElementById("output").textContent =
+                JSON.stringify(sorted, null, 2);
+        }
+        function removeBook() {
+            books = books.filter(book => book.id !== 2);
+
+            document.getElementById("output").textContent =
+                "Book with ID=2 removed\n" +
+                JSON.stringify(books, null, 2);
+        }
+        function checkStock() {
+            let outOfStock = books.some(book => book.stock === 0);
+
+            document.getElementById("output").textContent =
+                outOfStock ? "Some books are out of stock"
+                           : "All books are in stock";
+        }
+        function groupBooks() {
+            let grouped = books.reduce((acc, book) => {
+                if (book.price < 500) {
+                    acc["Below 500"] = acc["Below 500"] || [];
+                    acc["Below 500"].push(book);
+                } else {
+                    acc["Above 500"] = acc["Above 500"] || [];
+                    acc["Above 500"].push(book);
+                }
+                return acc;
+            }, {});
+
+            document.getElementById("output").textContent =
+                JSON.stringify(grouped, null, 2);
+        }
+        function addDiscount() {
+            let discounted = books.map(book => {
+                if (book.price > 600) {
+                    return { ...book, price: Math.round(book.price * 0.9) };
+                }
+                return book;
+            });
+
+            document.getElementById("output").textContent =
+                JSON.stringify(discounted, null, 2);
+        }
+        function generateInvoice() {
+            let invoice = books
+                .map(book => `${book.title} - ₹${book.price}`)
+                .join("\n");
+
+            document.getElementById("output").textContent = invoice;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input { margin: 5px; padding: 5px; }
+        button { margin: 5px; padding: 6px 12px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🎓 Student Grade Calculator</h1>
+
+<input type="text" id="studentName" placeholder="Enter Student Name">
+<button onclick="createStudent()">Create Student</button>
+
+<br><br>
+
+<input type="number" id="markInput" placeholder="Enter Mark">
+<button onclick="addMark()">Add Mark</button>
+
+<button onclick="showAverage()">Get Average</button>
+<button onclick="showGrade()">Get Grade</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+let student;
+
+class Student {
+
+    constructor(name) {
+        this.name = name;
+        this.marks = [];
+    }
+
+    addMark(mark) {
+        if (mark < 0 || mark > 100 || isNaN(mark)) {
+            return "Invalid mark. Enter between 0 and 100.";
+        }
+        this.marks.push(mark);
+        return `Mark ${mark} added.`;
+    }
+
+    getAverage() {
+        if (this.marks.length === 0) {
+            return 0;
+        }
+        let total = this.marks.reduce((sum, m) => sum + m, 0);
+        return total / this.marks.length;
+    }
+
+    getGrade() {
+        let avg = this.getAverage();
+
+        if (avg >= 90) return "A";
+        if (avg >= 75) return "B";
+        if (avg >= 50) return "C";
+        return "Fail";
+    }
+}
+
+function createStudent() {
+    let name = document.getElementById("studentName").value;
+    if (!name) {
+        document.getElementById("output").textContent = "Enter student name.";
+        return;
+    }
+    student = new Student(name);
+    document.getElementById("output").textContent = `Student ${name} created.`;
+}
+
+function addMark() {
+    if (!student) {
+        document.getElementById("output").textContent = "Create student first.";
+        return;
+    }
+    let mark = parseFloat(document.getElementById("markInput").value);
+    let message = student.addMark(mark);
+    document.getElementById("output").textContent = message;
+}
+
+function showAverage() {
+    if (!student) {
+        document.getElementById("output").textContent = "Create student first.";
+        return;
+    }
+    let avg = student.getAverage().toFixed(2);
+    document.getElementById("output").textContent =
+        `Average: ${avg}`;
+}
+
+function showGrade() {
+    if (!student) {
+        document.getElementById("output").textContent = "Create student first.";
+        return;
+    }
+    let grade = student.getGrade();
+    document.getElementById("output").textContent =
+        `Grade: ${grade}`;
+}
+
+</script>
+
+</body>
+</html>

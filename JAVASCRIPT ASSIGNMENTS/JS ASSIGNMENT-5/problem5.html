@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary System</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🏢 Employee Salary System </h1>
+
+<button onclick="runExample()">Run Example</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class Employee {
+    constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    getDetails() {
+        return `Name: ${this.name}
+Base Salary: ₹${this.salary}`;
+    }
+}
+
+class Manager extends Employee {
+    constructor(name, salary, bonus) {
+        super(name, salary);
+        this.bonus = bonus;
+    }
+
+    getTotalSalary() {
+        return this.salary + this.bonus;
+    }
+}
+
+class Director extends Manager {
+    constructor(name, salary, bonus, stockOptions) {
+        super(name, salary, bonus);
+        this.stockOptions = stockOptions;
+    }
+
+    getFullCompensation() {
+        return this.salary + this.bonus + this.stockOptions;
+    }
+}
+
+function runExample() {
+
+    let director1 = new Director("Ravi", 100000, 20000, 50000);
+
+    let details = director1.getDetails();
+    let totalSalary = director1.getTotalSalary();
+    let fullComp = director1.getFullCompensation();
+
+    document.getElementById("output").textContent =
+        details +
+        `
+
+Manager Total Salary (Salary + Bonus): ₹${totalSalary}
+
+Director Full Compensation (Salary + Bonus + Stock Options): ₹${fullComp}`;
+}
+
+</script>
+
+</body>
+</html>

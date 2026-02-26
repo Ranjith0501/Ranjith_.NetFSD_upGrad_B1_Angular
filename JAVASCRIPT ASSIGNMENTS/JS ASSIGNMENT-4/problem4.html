@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Payroll System</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { margin: 5px; padding: 6px 12px; }
+        pre { background: #f4f4f4; padding: 10px; }
+        table { border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<h1>💼 Employee Payroll System</h1>
+
+<button onclick="totalExpense()">1. Total Salary Expense</button>
+<button onclick="highestLowest()">2. Highest & Lowest Paid</button>
+<button onclick="increaseIT()">3. Increase IT Salary (15%)</button>
+<button onclick="groupByDept()">4. Group by Department</button>
+<button onclick="deptAverage()">5. Department Avg Salary</button>
+<button onclick="sortSalary()">6. Sort by Salary Desc</button>
+
+<button onclick="addTax()">Bonus: Add Tax Deduction</button>
+<button onclick="aboveAverage()">Bonus: Above Average Salary</button>
+<button onclick="createTable()">Bonus: Convert to HTML Table</button>
+
+<h3>Output:</h3>
+<div id="output"></div>
+
+<script>
+
+let employees = [
+ { id:1, name:"Ravi", dept:"IT", salary:70000 },
+ { id:2, name:"Anita", dept:"HR", salary:50000 },
+ { id:3, name:"Karan", dept:"IT", salary:80000 },
+ { id:4, name:"Meena", dept:"Finance", salary:60000 }
+];
+function totalExpense() {
+    let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    document.getElementById("output").innerHTML =
+        "Total Salary Expense: ₹" + total;
+}
+function highestLowest() {
+
+    let highest = employees.reduce((max, emp) =>
+        emp.salary > max.salary ? emp : max
+    );
+
+    let lowest = employees.reduce((min, emp) =>
+        emp.salary < min.salary ? emp : min
+    );
+
+    document.getElementById("output").innerHTML =
+        "Highest Paid: " + highest.name + " ₹" + highest.salary +
+        "<br>Lowest Paid: " + lowest.name + " ₹" + lowest.salary;
+}
+function increaseIT() {
+    employees = employees.map(emp =>
+        emp.dept === "IT"
+        ? { ...emp, salary: Math.round(emp.salary * 1.15) }
+        : emp
+    );
+
+    document.getElementById("output").innerHTML =
+        JSON.stringify(employees, null, 2);
+}
+function groupByDept() {
+    let grouped = employees.reduce((acc, emp) => {
+        acc[emp.dept] = acc[emp.dept] || [];
+        acc[emp.dept].push(emp);
+        return acc;
+    }, {});
+
+    document.getElementById("output").innerHTML =
+        "<pre>" + JSON.stringify(grouped, null, 2) + "</pre>";
+}
+function deptAverage() {
+
+    let grouped = employees.reduce((acc, emp) => {
+        acc[emp.dept] = acc[emp.dept] || [];
+        acc[emp.dept].push(emp.salary);
+        return acc;
+    }, {});
+
+    let averages = {};
+
+    for (let dept in grouped) {
+        let total = grouped[dept].reduce((a,b) => a + b, 0);
+        averages[dept] = (total / grouped[dept].length).toFixed(2);
+    }
+
+    document.getElementById("output").innerHTML =
+        "<pre>" + JSON.stringify(averages, null, 2) + "</pre>";
+}
+function sortSalary() {
+    let sorted = [...employees].sort((a, b) => b.salary - a.salary);
+
+    document.getElementById("output").innerHTML =
+        "<pre>" + JSON.stringify(sorted, null, 2) + "</pre>";
+}
+function addTax() {
+    let taxed = employees.map(emp => ({
+        ...emp,
+        salaryAfterTax: Math.round(emp.salary * 0.9)
+    }));
+
+    document.getElementById("output").innerHTML =
+        "<pre>" + JSON.stringify(taxed, null, 2) + "</pre>";
+}
+function aboveAverage() {
+
+    let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    let avg = total / employees.length;
+
+    let result = employees.filter(emp => emp.salary > avg);
+
+    document.getElementById("output").innerHTML =
+        "Average Salary: ₹" + avg.toFixed(2) +
+        "<pre>" + JSON.stringify(result, null, 2) + "</pre>";
+}
+function createTable() {
+
+    let table = "<table>";
+    table += "<tr><th>ID</th><th>Name</th><th>Department</th><th>Salary</th></tr>";
+
+    employees.forEach(emp => {
+        table += `<tr>
+                    <td>${emp.id}</td>
+                    <td>${emp.name}</td>
+                    <td>${emp.dept}</td>
+                    <td>₹${emp.salary}</td>
+                  </tr>`;
+    });
+
+    table += "</table>";
+
+    document.getElementById("output").innerHTML = table;
+}
+
+</script>
+
+</body>
+</html>

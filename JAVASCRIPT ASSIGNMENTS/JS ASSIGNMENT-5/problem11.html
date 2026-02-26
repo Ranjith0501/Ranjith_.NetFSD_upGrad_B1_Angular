@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getters & Setters - User</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 6px 12px; margin-top: 10px; }
+        input { padding: 5px; margin: 5px 0; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>🔐 Getters & Setters - User</h1>
+
+<input type="password" id="passwordInput" placeholder="Enter Password">
+<button onclick="setPassword()">Set Password</button>
+<button onclick="getPassword()">Get Password</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+class User {
+
+    constructor() {
+        this._password = "";
+    }
+
+    set password(value) {
+        if (value.length < 6) {
+            document.getElementById("output").textContent =
+                "Password must be at least 6 characters long.";
+        } else {
+            this._password = value;
+            document.getElementById("output").textContent =
+                "Password set successfully.";
+        }
+    }
+
+    get password() {
+        return this._password;
+    }
+}
+
+let user = new User();
+
+function setPassword() {
+    let pwd = document.getElementById("passwordInput").value;
+    user.password = pwd;
+}
+
+function getPassword() {
+    document.getElementById("output").textContent =
+        "Stored Password: " + user.password;
+}
+
+</script>
+
+</body>
+</html>

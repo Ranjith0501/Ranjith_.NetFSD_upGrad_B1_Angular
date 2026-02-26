@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 6px 12px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🛒 Shopping Cart Management</h1>
+
+<button onclick="totalValue()">1. Total Cart Value</button>
+<button onclick="increaseQty()">2. Increase Laptop Qty</button>
+<button onclick="removeProduct()">3. Remove Mouse</button>
+<button onclick="applyDiscount()">4. Apply 10% Discount</button>
+<button onclick="sortCart()">5. Sort by Item Total</button>
+<button onclick="checkHighPrice()">6. Any Product > 50,000?</button>
+<button onclick="checkStock()">7. All Items In Stock?</button>
+
+<button onclick="generateInvoice()">Bonus: Generate Invoice</button>
+<button onclick="mostExpensive()">Bonus: Most Expensive</button>
+<button onclick="calculateGST()">Bonus: Calculate GST (18%)</button>
+
+<h3>Output:</h3>
+<pre id="output"></pre>
+
+<script>
+
+let cart = [
+  { id: 1, product: "Laptop", price: 60000, qty: 1 },
+  { id: 2, product: "Headphones", price: 2000, qty: 2 },
+  { id: 3, product: "Mouse", price: 800, qty: 1 }
+];
+function totalValue() {
+    let total = cart.reduce((sum, item) => 
+        sum + (item.price * item.qty), 0);
+
+    document.getElementById("output").textContent =
+        "Total Cart Value: ₹" + total;
+}
+function increaseQty() {
+    cart = cart.map(item => 
+        item.id === 1 
+        ? { ...item, qty: item.qty + 1 }
+        : item
+    );
+
+    document.getElementById("output").textContent =
+        JSON.stringify(cart, null, 2);
+}
+function removeProduct() {
+    cart = cart.filter(item => item.id !== 3);
+
+    document.getElementById("output").textContent =
+        JSON.stringify(cart, null, 2);
+}
+function applyDiscount() {
+    cart = cart.map(item =>
+        item.price > 10000
+        ? { ...item, price: Math.round(item.price * 0.9) }
+        : item
+    );
+
+    document.getElementById("output").textContent =
+        JSON.stringify(cart, null, 2);
+}
+function sortCart() {
+    let sorted = [...cart].sort((a, b) =>
+        (a.price * a.qty) - (b.price * b.qty)
+    );
+
+    document.getElementById("output").textContent =
+        JSON.stringify(sorted, null, 2);
+}
+function checkHighPrice() {
+    let result = cart.some(item => item.price > 50000);
+
+    document.getElementById("output").textContent =
+        result ? "Yes, there is a high value product"
+               : "No product above ₹50,000";
+}
+function checkStock() {
+    let result = cart.every(item => item.qty > 0);
+
+    document.getElementById("output").textContent =
+        result ? "All items are in stock"
+               : "Some items are out of stock";
+}
+function generateInvoice() {
+    let invoice = cart
+        .map(item =>
+            `${item.product} (x${item.qty}) - ₹${item.price * item.qty}`
+        )
+        .join("\n");
+
+    document.getElementById("output").textContent = invoice;
+}
+function mostExpensive() {
+    let expensive = cart.reduce((max, item) =>
+        (item.price > max.price ? item : max)
+    );
+
+    document.getElementById("output").textContent =
+        JSON.stringify(expensive, null, 2);
+}
+function calculateGST() {
+    let total = cart.reduce((sum, item) =>
+        sum + (item.price * item.qty), 0);
+
+    let gst = total * 0.18;
+    let finalAmount = total + gst;
+
+    document.getElementById("output").textContent =
+        "Total: ₹" + total +
+        "\nGST (18%): ₹" + gst.toFixed(2) +
+        "\nFinal Amount: ₹" + finalAmount.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>
