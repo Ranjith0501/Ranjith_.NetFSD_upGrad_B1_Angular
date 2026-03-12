@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\c#_class_assignment1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:c#_class_assignment1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\patientrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:patientrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\nurse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:nurse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\medicaltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:medicaltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|f:\\upgrad\\c#\\handson\\c#_class_assignment1\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF84546-01C3-4C03-B8E5-3E9B0FC9F5CF}|C#_Class_Assignment1.csproj|solutionrelative:appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MedicalTest.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\MedicalTest.cs",
+              "RelativeDocumentMoniker": "MedicalTest.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\MedicalTest.cs",
+              "RelativeToolTip": "MedicalTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:50:08.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Hospital.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Hospital.cs",
+              "RelativeDocumentMoniker": "Hospital.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Hospital.cs",
+              "RelativeToolTip": "Hospital.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:49:44.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Doctor.cs",
+              "RelativeToolTip": "Doctor.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:49:04.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Billing.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Billing.cs",
+              "RelativeDocumentMoniker": "Billing.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Billing.cs",
+              "RelativeToolTip": "Billing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:48:42.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Nurse.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Nurse.cs",
+              "RelativeDocumentMoniker": "Nurse.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Nurse.cs",
+              "RelativeToolTip": "Nurse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:50:28.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Patient.cs",
+              "RelativeDocumentMoniker": "Patient.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Patient.cs",
+              "RelativeToolTip": "Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:50:52.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientRecords.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\PatientRecords.cs",
+              "RelativeDocumentMoniker": "PatientRecords.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\PatientRecords.cs",
+              "RelativeToolTip": "PatientRecords.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:51:20.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "C#_Class_Assignment1",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\C#_Class_Assignment1.csproj",
+              "RelativeDocumentMoniker": "C#_Class_Assignment1.csproj",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\C#_Class_Assignment1.csproj",
+              "RelativeToolTip": "C#_Class_Assignment1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-12T15:54:31.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Appointment.cs",
+              "RelativeDocumentMoniker": "Appointment.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Class_Assignment1\\Appointment.cs",
+              "RelativeToolTip": "Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T15:46:20.015Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
