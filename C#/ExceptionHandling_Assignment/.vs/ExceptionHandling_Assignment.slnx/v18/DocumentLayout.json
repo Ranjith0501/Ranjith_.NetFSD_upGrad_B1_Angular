@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|f:\\upgrad\\c#\\handson\\exceptionhandling_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|f:\\upgrad\\c#\\handson\\exceptionhandling_assignment\\assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|solutionrelative:assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|f:\\upgrad\\c#\\handson\\exceptionhandling_assignment\\assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5124AEB9-7D9B-464D-A2A5-AF7EE3050714}|ExceptionHandling_Assignment.csproj|solutionrelative:assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assignment2.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Assignment2.cs",
+              "RelativeDocumentMoniker": "Assignment2.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Assignment2.cs",
+              "RelativeToolTip": "Assignment2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:42:58.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment1.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Assignment1.cs",
+              "RelativeDocumentMoniker": "Assignment1.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Assignment1.cs",
+              "RelativeToolTip": "Assignment1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:42:23.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\ExceptionHandling_Assignment\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:41:14.826Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

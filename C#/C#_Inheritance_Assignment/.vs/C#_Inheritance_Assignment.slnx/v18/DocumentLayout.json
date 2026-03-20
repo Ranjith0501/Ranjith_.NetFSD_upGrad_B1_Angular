@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|f:\\upgrad\\c#\\handson\\c#_inheritance_assignment\\assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6895AE0B-D403-47EA-8CFF-854AD1DFF892}|C#_Inheritance_Assignment.csproj|solutionrelative:assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assignment6.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment6.cs",
+              "RelativeDocumentMoniker": "Assignment6.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment6.cs",
+              "RelativeToolTip": "Assignment6.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAADwv4UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:39:41.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment5.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment5.cs",
+              "RelativeDocumentMoniker": "Assignment5.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment5.cs",
+              "RelativeToolTip": "Assignment5.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADwv0UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:39:19.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Assignment4.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment4.cs",
+              "RelativeDocumentMoniker": "Assignment4.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment4.cs",
+              "RelativeToolTip": "Assignment4.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvykAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:38:56.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Assignment3.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment3.cs",
+              "RelativeDocumentMoniker": "Assignment3.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment3.cs",
+              "RelativeToolTip": "Assignment3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:38:35.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Assignment2.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment2.cs",
+              "RelativeDocumentMoniker": "Assignment2.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment2.cs",
+              "RelativeToolTip": "Assignment2.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:38:11.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Assignment1.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment1.cs",
+              "RelativeDocumentMoniker": "Assignment1.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Assignment1.cs",
+              "RelativeToolTip": "Assignment1.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvykAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:37:45.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\UpGrad\\C#\\HandsOn\\C#_Inheritance_Assignment\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T07:36:20.281Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
