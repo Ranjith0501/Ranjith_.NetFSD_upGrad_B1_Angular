@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6DE4F7-12E9-495D-A61A-A5B199FDD07A}|Assignment9.csproj|f:\\upgrad\\asp.netcore\\handson\\assignments\\mvc_assignment_1\\assignment9\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6DE4F7-12E9-495D-A61A-A5B199FDD07A}|Assignment9.csproj|solutionrelative:controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DemoController.cs",
+              "DocumentMoniker": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment9\\Controllers\\DemoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DemoController.cs",
+              "ToolTip": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment9\\Controllers\\DemoController.cs",
+              "RelativeToolTip": "Controllers\\DemoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T11:27:46.49Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

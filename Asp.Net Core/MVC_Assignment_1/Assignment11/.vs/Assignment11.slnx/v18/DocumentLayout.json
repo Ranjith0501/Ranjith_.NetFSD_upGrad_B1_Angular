@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20B52865-B839-45B9-8B6E-3DEC1C4AAE5C}|Assignment11.csproj|f:\\upgrad\\asp.netcore\\handson\\assignments\\mvc_assignment_1\\assignment11\\views\\home\\date.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20B52865-B839-45B9-8B6E-3DEC1C4AAE5C}|Assignment11.csproj|solutionrelative:views\\home\\date.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B52865-B839-45B9-8B6E-3DEC1C4AAE5C}|Assignment11.csproj|f:\\upgrad\\asp.netcore\\handson\\assignments\\mvc_assignment_1\\assignment11\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B52865-B839-45B9-8B6E-3DEC1C4AAE5C}|Assignment11.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Date.cshtml",
+              "DocumentMoniker": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment11\\Views\\Home\\Date.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Date.cshtml",
+              "ToolTip": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment11\\Views\\Home\\Date.cshtml",
+              "RelativeToolTip": "Views\\Home\\Date.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T11:34:08.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment11\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\UpGrad\\Asp.netcore\\Handson\\Assignments\\MVC_Assignment_1\\Assignment11\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T11:33:30.95Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
